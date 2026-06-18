@@ -1,19 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>grade calculation</h1>
-    <form action="#">
-        <input type="number" id="subjects">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    </form>
-    <button onclick="calculateResult()">calculate result</button>
-    <div id="result"></div>
-    <script src="./script.js"></script>
-    
+    <title>Responsive Bootstrap Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <h1>My Responsive Website</h1>
+            <p>Responsive Web Page using Bootstrap Grid System</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                Website
+            </a>
+
+            <!-- Toggle Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="content-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-sm-12 col-md-6">
+
+                    <div class="custom-card">
+
+                        <h3>Column 1</h3>
+
+                        <p>
+                            This is the first column. On small screens,
+                            the columns become single-column layouts,
+                            while on medium and larger screens they
+                            appear side by side.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Learn More
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-sm-12 col-md-6">
+
+                    <div class="custom-card">
+
+                        <h3>Column 2</h3>
+
+                        <p>
+                            Bootstrap grid system helps create responsive
+                            layouts using rows, columns, and breakpoints
+                            like col-sm, col-md, and col-lg.
+                        </p>
+
+                        <button class="btn btn-outline-primary">
+                            Explore
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+
+        <div class="container">
+            <p>
+                © 2026 My Website | All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
